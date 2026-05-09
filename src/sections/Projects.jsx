@@ -3,40 +3,40 @@ import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 import { FaGithub} from "react-icons/fa";
 const projects = [
   {
-    title: "Fintech Dashboard",
+    title: "QuickGPT",
     description:
-      "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
-    image: "/projects/project1.png",
-    tags: ["React", "Typescript", "NodeJS"],
-    link: "#",
-    github: "#",
+      "AI-powered MERN app where users can sign up and generate text and images using Gemini AI. Includes JWT authentication, ImageKit integration for image handling, and a Stripe-based credit system for purchasing usage. Built for real-world full-stack deployment.",
+    image: "/projects/1.png",
+    tags: ["React", "Tailwind", "Node.JS", "Stripe", "MongoDB", "Axios", "Prism.JS", "Express.JS"],
+    link: "https://quick-gpt-xi-sable.vercel.app/",
+    github: "https://github.com/bs-bhaskar/QuickGPT",
   },
   {
-    title: "E-Commerce Platform",
+    title: "QR Code Generator",
     description:
-      "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
-    image: "/projects/project2.png",
-    tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
-    link: "#",
-    github: "#",
+      "A simple and responsive QR Code Generator built using HTML, CSS, and JavaScript. Users can instantly generate QR codes from any text or URL, download them, and even switch between light and dark mode.",
+    image: "/projects/2.png",
+    tags: ["HTML", "CSS", "JavaScript"],
+    link: "https://qr-code-generator-eta-flame.vercel.app/",
+    github: "https://github.com/bs-bhaskar/qr-code-generator.git",
   },
   {
-    title: "AI Writing Assistant",
+    title: "Text to Speech Converter",
     description:
-      "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
-    image: "/projects/project3.png",
-    tags: ["React", "OpenAI", "Python", "FastAPI"],
-    link: "#",
-    github: "#",
+      "A clean and simple Text-to-Speech (TTS) web application built using HTML, CSS, and JavaScript. This project converts user input text into spoken audio using the browser's Web Speech API.",
+    image: "/projects/3.png",
+    tags: ["HTML", "CSS", "JavaScript"],
+    link: "https://text-to-voice-converter-tau.vercel.app/",
+    github: "https://github.com/bs-bhaskar/text-to-voice-converter.git",
   },
   {
-    title: "Project Management Tool",
+    title: "Image Background Change Effect",
     description:
-      "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
-    image: "/projects/project4.png",
-    tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
-    link: "#",
-    github: "#",
+      "This project creates a cool image comparison effect where users can slide across the image to reveal the original and edited versions. Built using pure HTML, CSS, and JavaScript.",
+    image: "/projects/4.png",
+    tags: ["HTML", "CSS", "JavaScript"],
+    link: "https://image-background-change-effect-sand.vercel.app/",
+    github: "https://github.com/bs-bhaskar/image-Background-change-effect.git",
   },
 ];
 
@@ -88,12 +88,14 @@ export const Projects = () => {
                 {/* Overlay Links */}
                 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <a
+                    target="_blank"
                     href={project.link}
                     className="p-3 rounded-full glass hover:bg-[var(--color-primary)] hover:text-[var(--color-primary-foreground)] transition-all"
                   >
                     <ArrowUpRight className="w-5 h-5" />
                   </a>
                   <a
+                    target="_blank"
                     href={project.github}
                     className="p-3 rounded-full glass hover:bg-[var(--color-primary)] hover:text-[var(--color-primary-foreground)] transition-all"
                   >
@@ -135,10 +137,12 @@ export const Projects = () => {
 
         {/* View All CTA */}
         <div className="text-center mt-12 animate-fade-in animation-delay-500">
-          <AnimatedBorderButton>
-            View All Projects
-            <ArrowUpRight className="w-5 h-5" />
-          </AnimatedBorderButton>
+          <a href="https://github.com/bs-bhaskar" target="_blank" rel="noopener noreferrer">
+            <AnimatedBorderButton>
+              View All Projects
+              <ArrowUpRight className="w-5 h-5" />
+            </AnimatedBorderButton>
+          </a>
         </div>
       </div>
     </section>

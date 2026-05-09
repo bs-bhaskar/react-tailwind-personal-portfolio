@@ -4,35 +4,35 @@ import { useState } from "react";
 const testimonials = [
   {
     quote:
-      "Pedro is one of the most talented engineers I've worked with. His attention to detail and ability to translate complex requirements into elegant solutions is remarkable.",
-    author: "Sarah Chen",
-    role: "CTO, Tech Innovators Inc.",
+      "Bhaskar has always shown strong curiosity for learning and improving his development skills. His consistency, practical mindset, and willingness to build real projects make him stand out among students.",
+    author: "Sameer Nainawat",
+    role: "Former Faculty & Mentor",
     avatar:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
+      "./sameer.png",
   },
   {
     quote:
-      "Working with Pedro was a game-changer for our project. He delivered ahead of schedule with code quality that set a new standard for our team.",
-    author: "Michael Rodriguez",
-    role: "Product Manager, Digital Solutions",
+      "Bhaskar is a sincere and dedicated student who continuously works on improving both his programming and problem-solving skills. He actively learns through practice and project building.",
+    author: "Vishnu Saini",
+    role: "Programming Faculty",
     avatar:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop",
+      "./vishnu.png",
   },
   {
     quote:
-      "Pedro's expertise in React and TypeScript helped us rebuild our entire frontend in record time. His architectural decisions continue to pay dividends.",
-    author: "Emily Watson",
-    role: "Engineering Lead, StartUp Labs",
+      "I've seen Bhaskar grow consistently as a developer through regular practice and project building. His dedication toward web development and learning stands out.",
+    author: "Amit Saini",
+    role: "Classmate & Peer",
     avatar:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop",
+      "./amit.png",
   },
   {
     quote:
-      "Not only is Pedro technically brilliant, but he's also a fantastic communicator and team player. He elevated everyone around him.",
-    author: "David Kim",
-    role: "CEO, Innovation Hub",
+      "Bhaskar is always focused on learning something new and improving his projects. He is consistent, hardworking, and enjoys helping others while learning together.",
+    author: "Lucky Sharma",
+    role: "Classmate & Peer",
     avatar:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
+      "./lucky.png",
   },
 ];
 

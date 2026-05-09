@@ -15,20 +15,20 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "pedro@example.com",
-    href: "mailto:pedro@example.com",
+    value: "shardayogi60@gmail.com",
+    href: "mailto:shardayogi60@gmail.com",
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "+1 (555) 123-4567",
-    href: "tel:+15551234567",
+    value: "+91 9116978158",
+    href: "tel:+919116978158",
   },
   {
     icon: MapPin,
     label: "Location",
-    value: "San Francisco, CA",
-    href: "#",
+    value: "Jaipur, RJ",
+    href: "https://maps.app.goo.gl/7aD4CehoVnuQu1Ky8",
   },
 ];
 
@@ -73,22 +73,22 @@ export const Contact = () => {
 
       setSubmitStatus({
         type: "success",
-        message: "Message sent successfully! I'll get back to you soon.",
+        message: "Message sent successfully! Thanks for reaching out.",
       });
       setFormData({ name: "", email: "", message: "" });
     } catch (err) {
-      console.error("EmailJS error:", error);
+      console.error("EmailJS error:", err);
       setSubmitStatus({
         type: "error",
         message:
-          error.text || "Failed to send message. Please try again later.",
+          err.text || "Failed to send message. Please try again later.",
       });
     } finally {
       setIsLoading(false);
     }
   };
   return (
-    <section id="contact" className="py-32 relative overflow-hidden">
+    <section id="contact" className="py-32 relative overflow-hidden scroll-mt-28">
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[rgba(32, 178, 166,0.05)] rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-[rgba(245, 166, 35, 0.05)] rounded-full blur-3xl" />
@@ -101,14 +101,13 @@ export const Contact = () => {
             Get In Touch
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-[var(--color-secondary-foreground)]">
-            Let's build{" "}
+            Let's {" "}
             <span className="font-serif italic font-normal text-white">
-              something great.
+              work together.
             </span>
           </h2>
           <p className="text-[var(--color-muted-foreground)] animate-fade-in animation-delay-200">
-            Have a project in mind? I'd love to hear about it. Send me a message
-            and let's discuss how we can work together.
+            I'm always open to learning opportunities, collaborations, and exciting projects. Feel free to reach out — I'd love to connect with fellow developers and creators.
           </p>
         </div>
 
@@ -220,6 +219,7 @@ export const Contact = () => {
                   <a
                     key={i}
                     href={item.href}
+                    target="_blank"
                     className="flex items-center gap-4 p-4 rounded-xl hover:bg-[var(--color-surface)] transition-colors group"
                   >
                     <div className="w-12 h-12 rounded-xl bg-[rgba(32, 178, 166,0.1)] flex items-center justify-center group-hover:bg-[rgba(32, 178, 166,0.2)] transition-colors">
@@ -243,9 +243,7 @@ export const Contact = () => {
                 <span className="font-medium">Currently Available</span>
               </div>
               <p className="text-[var(--color-muted-foreground)] text-sm">
-                I'm currently open to new opportunities and exciting projects.
-                Whether you need a full-time engineer or a freelance consultant,
-                let's talk!
+                Currently focused on learning, building projects, and exploring opportunities to grow as a developer.
               </p>
             </div>
           </div>

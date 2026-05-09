@@ -1,18 +1,19 @@
 // import { Github, Linkedin, Twitter, Heart } from "lucide-react";
-import { FaGithub, FaLinkedin, FaTwitter} from "react-icons/fa";
-
+import { FaGithub, FaLinkedin} from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 
 const socialLinks = [
-  { icon: FaGithub, href: "#", label: "GitHub" },
-  { icon: FaLinkedin, href: "#", label: "LinkedIn" },
-  { icon: FaTwitter, href: "#", label: "Twitter" },
+  { icon: FaGithub, href: "https://github.com/bs-bhaskar", label: "GitHub" },
+  { icon: FaLinkedin, href: "https://www.linkedin.com/in/bhaskar-yogi-180b66325/", label: "LinkedIn" },
+  { icon: SiLeetcode, href: "https://leetcode.com/u/BhaskarBhai/", label: "LeetCode" },
 ];
 
 const footerLinks = [
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
-  { href: "#experience", label: "Experience" },
+  { href: "#experience", label: "Journey" },
   { href: "#contact", label: "Contact" },
+  { href: "#testimonials", label: "Feedback" },
 ];
 
 export const Footer = () => {
@@ -25,10 +26,10 @@ export const Footer = () => {
           {/* Logo & Copyright */}
           <div className="text-center md:text-left">
             <a href="#" className="text-xl font-bold tracking-tight hover:text-[var(--color-primary)]">
-              PM<span className="text-[var(--color-primary)]">.</span>
+              BY<span className="text-[var(--color-primary)]">.</span>
             </a>
             <p className="text-sm text-[var(--color-muted-foreground)] mt-2">
-              © {currentYear} Pedro Machado. All rights reserved.
+              © {currentYear} Bhaskar Yogi. Built with React & Tailwind CSS.
             </p>
           </div>
 
@@ -51,7 +52,9 @@ export const Footer = () => {
               <a
                 key={social.label}
                 href={social.href}
+                target="_blank"
                 aria-label={social.label}
+                rel="noopener noreferrer"
                 className="p-2 rounded-full glass hover:bg-[rgba(32, 178, 166,0.1)] hover:text-[var(--color-primary)] transition-all"
               >
                 <social.icon className="w-5 h-5" />

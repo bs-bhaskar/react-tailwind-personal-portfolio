@@ -1,27 +1,26 @@
 import { ArrowRight,ChevronDown,Download } from "lucide-react";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin} from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 import { Button } from "../components/Button";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 
 const skills = [
   "React",
-  "Next.js",
-  "TypeScript",
   "Node.js",
-  "GraphQL",
-  "PostgreSQL",
+  "JavaScript",
   "MongoDB",
-  "Redis",
-  "Docker",
-  "AWS",
-  "Vercel",
+  "Express.JS",
   "Tailwind CSS",
-  "Prisma",
-  "Jest",
-  "Cypress",
-  "Figma",
+  "APIs",
+  "C/C++",
+  "Basic DSA",
+  "BootStrap",
+  "HTML",
+  "CSS",
   "Git",
-  "GitHub Actions",
+  "GitHub",
+  "Render",
+  "Vercel",
 ];
 
 export const Hero = () => {
@@ -60,38 +59,41 @@ export const Hero = () => {
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-[var(--color-primary)]">
                 <span className="w-2 h-2 bg-[var(--color-primary)] rounded-full animate-pulse" />
-                Software Engineer • React Specialist
+                BCA Student | Aspiring Full Stack Developer • Software Developer
               </span>
             </div>
             {/* Headline */}
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
-                Crafting{" "}
+                Turning{" "}
                 <span className="text-[var(--color-primary)] glow-text">
-                  digital
+                  ideas
                 </span>
                 <br />
-                experiences with
+                into real-world
                 <br />
                 <span className="font-serif italic font-normal text-white">
-                  precision.
+                  projects.
                 </span>
               </h1>
               <p className="text-lg text-[var(--color-muted-foreground)] max-w-lg animate-fade-in animation-delay-800">
-                Hi, I'm Pedro Machado — a software engineer specializing in
-                React, Next.js, and TypeScript. I build scalable, performant web
-                applications that users love.
+                Hi, I'm Bhaskar Yogi — a BCA student and aspiring full stack developer. 
+                Currently focused on building real-world projects using React, Node.js, Tailwind CSS, MongoDB, Express.js and improving my DSA skills.
               </p>
             </div>
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-              <Button size="lg">
-                Contact Me <ArrowRight className="w-5 h-5" />
-              </Button>
-              <AnimatedBorderButton>
-                <Download className="w-5 h-5" />
-                Download CV
-              </AnimatedBorderButton>
+              <a href="#contact">
+                <Button size="lg">
+                  Contact Me <ArrowRight className="w-5 h-5" />
+                </Button>
+              </a>
+              <a href="/resume.pdf" download target="_blank" rel="noopener noreferrer">
+                <AnimatedBorderButton>
+                  <Download className="w-5 h-5" />
+                  Download CV
+                </AnimatedBorderButton>
+              </a>
             </div>
             {/* Social Links */}
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
@@ -99,13 +101,15 @@ export const Hero = () => {
                 Follow me:{" "}
               </span>
               {[
-                { icon: FaGithub, href: "#" },
-                { icon: FaLinkedin, href: "#" },
-                { icon: FaTwitter, href: "#" },
+                { icon: FaGithub, href: "https://github.com/bs-bhaskar" },
+                { icon: FaLinkedin, href: "https://www.linkedin.com/in/bhaskar-yogi-180b66325/" },
+                { icon: SiLeetcode, href: "https://leetcode.com/u/BhaskarBhai/" },
               ].map((social, idx) => (
                 <a
                   key={idx}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-2 rounded-full glass hover:bg-[#20b2a61a] hover:text-[var(--color-primary)] transition-all duration-300"
                 >
                   {<social.icon className="w-5 h-5" />}
@@ -120,7 +124,7 @@ export const Hero = () => {
               <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[rgba(32,178,166,0.3)] via-transparent to-[rgba(32,178,166,0.1)] blur-2xl animate-pulse" />
               <div className="relative glass rounded-3xl p-2 glow-border">
                 <img
-                  src="/profile-photo.jpg"
+                  src="/profile-photo-3.png"
                   alt="Bhaskar yogi"
                   className="w-full aspect-[4/5] object-cover rounded-2xl"
                 />
@@ -135,9 +139,10 @@ export const Hero = () => {
                 </div>
                 {/* Stats Badge */}
                 <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
-                  <div className="text-2xl font-bold text-[var(--color-primary)]">5+</div>
+                  <div className="text-2xl font-bold text-[var(--color-primary)]">Daily{/*5+*/}</div>
                   <div className="text-xs text-[var(--color-muted-foreground)]">
-                    Years Exp.
+                    Learning
+                    {/* Years Exp. */}
                   </div>
                 </div>
               </div>
@@ -146,7 +151,8 @@ export const Hero = () => {
         </div>
 
         {/* Skills section */}
-        <div className="mt-20 animate-fade-in animation-delay-600">
+        {/* I remove this section because it is scroll animation. it is taking time. to save recruter time i remove this animation */}
+        {/* <div className="mt-20 animate-fade-in animation-delay-600">
             <p className="text-sm text-[var(--color-muted-foreground)] mb-6 text-center">
                 Technologies I work with
             </p>
@@ -159,10 +165,39 @@ export const Hero = () => {
                     ))}
                 </div>
             </div>
-        </div>
+        </div> */}
+        {/* ////////////////////////////////////////// */}
+<div className="mt-20 animate-fade-in animation-delay-600">
+  <p className="text-sm text-[var(--color-muted-foreground)] mb-6 text-center">
+    Technologies I work with
+  </p>
+
+  <div className="flex flex-wrap justify-center gap-4">
+    {/* {["HTML","CSS","JavaScript","React","Node.js","C++"].map((skill, idx) => ( */}
+    {[...skills].map((skill, idx) => (
+      <span
+        key={idx}
+        className="
+          px-6 py-3 
+          rounded-full 
+          glass 
+          text-sm font-medium 
+          text-[var(--color-muted-foreground)]
+          hover:text-[var(--color-primary)]
+          hover:scale-105
+          transition-all duration-300
+          cursor-default
+        "
+      >
+        {skill}
+      </span>
+    ))}
+  </div>
+</div>
+{/* ///////////////////////////////////////////////////////////// */}
       </div>
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in animation-delay-800">
-        <a href="#about" className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors group">
+      <div className="absolute bottom-1 left-1/2 -translate-x-1/2 animate-fade-in animation-delay-800">
+        <a href="#about" className="flex flex-col items-center gap-2 text-[var(--color-muted-foreground)] hover:text-[var(--color-primary)] transition-colors group">
           <span className="text-xs uppercase tracking-wider">Scroll</span>
           <ChevronDown className="w-6 h-6 animate-bounce" />
         </a>

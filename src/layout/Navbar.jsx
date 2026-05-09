@@ -4,8 +4,9 @@ import { useEffect, useState } from "react";
 const navLinks=[
     {href:"#about",label:"About"},
     {href:"#projects",label:"Projects"},
-    {href:"#experience",label:"Experience"},
-    {href:"#testimonials",label:"Testimonials"},
+    {href:"#experience",label:"Journey"},
+    {href:"#testimonials",label:"Feedback"},
+    {href:"#contact",label:"Contact"},
 ];
 
 export const Navbar=()=>{
@@ -24,13 +25,13 @@ export const Navbar=()=>{
         <header className={`fixed top-0 left-0 right-0 transition-all duration-500 ${isScrolled?"glass-strong py-3":"bg-transparent py-5"} z-50`}>
             <nav className="container mx-auto px-6 flex items-center justify-between">
                 <a href="#" className="text-xl font-bold tracking-tight hover:text-[var(--color-primary)]">
-                    PM<span className="text-[var(--color-primary)]">.</span>
+                    BY<span className="text-[var(--color-primary)]">.</span>
                 </a>
                 {/* Desktop Nav */}
                 <div className="hidden md:flex items-center gap-1">
                     <div className="glass rounded-full px-2 py-1 flex items-center gap-1">
                         {navLinks.map((link,index)=>(
-                            <a href={link.href} key={index} className="px-4 py-2 text-sm text-[var(--color-muted-foreground)] hover:text-[var(--color-foreground)] rounded-full hover:bg-[var(--color-surface)]">
+                            <a href={link.href} key={index} className="px-4 py-2 text-sm text-[var(--color-muted-foreground)] hover:text-[var(--color-foreground)] rounded-full hover:bg-[var(--color-surface)] hover:shadow-[0_0_15px_rgba(32,178,166,0.3)] transition-all duration-300">
                                 {link.label}
                             </a>
                         ))}
@@ -38,7 +39,9 @@ export const Navbar=()=>{
                 </div>
                 {/* CTA button */}
                 <div className="hidden md:block">
-                    <Button size="sm">Contact Me</Button>
+                    <a href="#contact">
+                        <Button size="sm">Contact Me</Button>
+                    </a>
                 </div>
                 {/* Mobile Menu Button */}
                 <button className="md:hidden p-2 text-[var(--color-foreground)] cursor-pointer" onClick={()=>setIsMobileMenuOpen((prev)=>!prev)}>

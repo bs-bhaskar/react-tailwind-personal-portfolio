@@ -3,73 +3,62 @@ import { Code2, Lightbulb, Rocket, Users } from "lucide-react";
 const highlights = [
   {
     icon: Code2,
-    title: "Clean Code",
+    title: "Web Development",
     description:
-      "Writing maintainable, scalable code that stands the test of time.",
+      "Building responsive and modern web applications using React and JavaScript.",
   },
   {
     icon: Rocket,
-    title: "Performance",
+    title: "Fast Learner",
     description:
-      "Optimizing for speed and delivering lightning-fast user experiences.",
+      "Continuously exploring new technologies and improving development skills.",
   },
   {
     icon: Users,
-    title: "Collaboration",
-    description: "Working closely with teams to bring ideas to life.",
+    title: "Problem Solving",
+    description: "Practicing DSA and logical thinking to become a stronger developer.",
   },
   {
     icon: Lightbulb,
-    title: "Innovation",
+    title: "Project Building",
     description:
-      "Staying ahead with the latest technologies and best practices.",
+      "Learning by creating real-world projects and experimenting with new ideas.",
   },
 ];
 
 export const About = () => {
   return (
-    <section id="about" className="py-32 relative overflow-hidden">
+    <section id="about" className="py-32 relative overflow-hidden scroll-mt-28">
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Column */}
           <div className="space-y-8">
             <div className="animate-fade-in">
-              <span className="text-[var(--color-secondary-foreground)] text-sm font-medium tracking-wider uppercase">
+              <span className="text-[var(--color-secondary-foreground)] text-lg font-medium tracking-wider uppercase">
                 About Me
               </span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-[var(--color-secondary-foreground)]">
-              Building the future,
+              Learning, building,
               <span className="font-serif italic font-normal text-white">
                 {" "}
-                one component at a time.
+                and growing every day.
               </span>
             </h2>
             <div className="space-y-4 text-[var(--color-muted-foreground)] animate-fade-in animation-delay-200">
               <p>
-                I'm a passionate software engineer with over 5 years of
-                experience crafting digital products that make a difference. My
-                journey started with a curiosity for how things work on the web,
-                and it has evolved into a deep expertise in modern frontend
-                technologies.
+                I'm currently pursuing BCA and focused on becoming a skilled full stack developer. I enjoy building modern web applications and continuously improving my coding skills.
               </p>
               <p>
-                I specialize in React, Next.js, and TypeScript, building
-                everything from sleek landing pages to complex enterprise
-                applications. My approach combines technical excellence with a
-                keen eye for design and user experience.
+                My current tech stack includes React, JavaScript, Node.js, MongoDB, and C++. Alongside web development, I'm also practicing Data Structures and Algorithms to strengthen my problem-solving abilities.
               </p>
               <p>
-                When I'm not coding, you'll find me exploring new technologies,
-                contributing to open-source projects, or sharing knowledge with
-                the developer community.
+                I believe the best way to learn is by building real projects. That's why I regularly create projects, explore new technologies, and challenge myself to improve every single day.
               </p>
             </div>
             <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
               <p className="text-lg font-medium italic text-[var(--color-foreground)]">
-                "My mission is to create digital experiences that are not just
-                functional, but truly delightful — products that users love to
-                use and developers love to maintain."
+                "My goal is simple — keep learning, keep building, and become a developer capable of creating impactful digital experiences."
               </p>
             </div>
           </div>
