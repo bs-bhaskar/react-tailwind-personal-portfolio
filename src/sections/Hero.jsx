@@ -91,7 +91,13 @@ export const Hero = () => {
               <a href="/resume.pdf" download target="_blank" rel="noopener noreferrer">
                 <AnimatedBorderButton>
                   <Download className="w-5 h-5" />
-                  Download CV
+                  Resume
+                </AnimatedBorderButton>
+              </a>
+              <a href="/professional-cv.pdf" download target="_blank" rel="noopener noreferrer">
+                <AnimatedBorderButton>
+                  <Download className="w-5q h-5"/>
+                  Professional CV
                 </AnimatedBorderButton>
               </a>
             </div>
