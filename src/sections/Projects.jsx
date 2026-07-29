@@ -12,6 +12,15 @@ const projects = [
     github: "https://github.com/bs-bhaskar/QuickGPT",
   },
   {
+    title: "Chatify",
+    description:
+      "A modern, secure and responsive real-time chat application builtusing the MERN Stack with JWT Authentication, Socket.IO,Cloudinary image uploads and email verification.",
+    image: "/projects/4.png",
+    tags: ["MERN Stack", "Tailwind CSS", "Zustand", "Socket.io", "DaisyUI", "JWT", "Arcjet", "Resend", "Cloudinary", "Mongoose"],
+    link: "https://chatify-weio.onrender.com",
+    github: "https://github.com/bs-bhaskar/chatify.git",
+  },
+  {
     title: "QR Code Generator",
     description:
       "A simple and responsive QR Code Generator built using HTML, CSS, and JavaScript. Users can instantly generate QR codes from any text or URL, download them, and even switch between light and dark mode.",
@@ -28,15 +37,6 @@ const projects = [
     tags: ["HTML", "CSS", "JavaScript"],
     link: "https://text-to-voice-converter-tau.vercel.app/",
     github: "https://github.com/bs-bhaskar/text-to-voice-converter.git",
-  },
-  {
-    title: "Image Background Change Effect",
-    description:
-      "This project creates a cool image comparison effect where users can slide across the image to reveal the original and edited versions. Built using pure HTML, CSS, and JavaScript.",
-    image: "/projects/4.png",
-    tags: ["HTML", "CSS", "JavaScript"],
-    link: "https://image-background-change-effect-sand.vercel.app/",
-    github: "https://github.com/bs-bhaskar/image-Background-change-effect.git",
   },
 ];
 

@@ -89,7 +89,7 @@ export const Experience = () => {
                 <div
                   className={`pl-8 md:pl-0 ${
                     idx % 2 === 0
-                      ? "md:pr-16 md:text-right"
+                      ? "md:pr-16 "
                       : "md:col-start-2 md:pl-16"
                   }`}
                 >
@@ -104,10 +104,10 @@ export const Experience = () => {
                     <p className="text-sm text-[var(--color-muted-foreground)] mt-4">
                       {exp.description}
                     </p>
-                    <div
-                      className={`flex flex-wrap gap-2 mt-4 ${
-                        idx % 2 === 0 ? "md:justify-end" : ""
-                      }`}
+                    <div className="flex flex-wrap gap-2 mt-4"
+                      // className={`flex flex-wrap gap-2 mt-4 ${
+                      //   idx % 2 === 0 ? "md:justify-end" : ""
+                      // }`}
                     >
                       {exp.technologies.map((tech, techIdx) => (
                         <span
