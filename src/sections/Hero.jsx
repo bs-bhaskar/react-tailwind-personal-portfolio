@@ -7,10 +7,10 @@ import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 const skills = [
   "React",
   "Node.js",
-  "JavaScript",
-  "MongoDB",
   "Express.JS",
+  "MongoDB",
   "Tailwind CSS",
+  "JavaScript",
   "APIs",
   "C/C++",
   "Basic DSA",
@@ -98,6 +98,24 @@ export const Hero = () => {
                 <AnimatedBorderButton>
                   <Download className="w-5q h-5"/>
                   Professional CV
+                </AnimatedBorderButton>
+              </a>
+              <a href="/Bhaskar_Yogi_ATS_Resume.pdf" download target="_blank" rel="noopener noreferrer">
+                <AnimatedBorderButton>
+                  <Download className="w-5q h-5"/>
+                  ATS Friendly CV
+                </AnimatedBorderButton>
+              </a>
+              <a href="/BHASKAR_YOGI_FlowCV_Resume.pdf" download target="_blank" rel="noopener noreferrer">
+                <AnimatedBorderButton>
+                  <Download className="w-5q h-5"/>
+                  Flow CV
+                </AnimatedBorderButton>
+              </a>
+              <a href="/BhaskarYogi_InternshalaResume.pdf" download target="_blank" rel="noopener noreferrer">
+                <AnimatedBorderButton>
+                  <Download className="w-5q h-5"/>
+                  Internshala Resume
                 </AnimatedBorderButton>
               </a>
             </div>
