@@ -38,9 +38,12 @@ export const Navbar=()=>{
                     </div>
                 </div>
                 {/* CTA button */}
-                <div className="hidden md:block">
+                <div className="hidden md:flex items-center gap-2">{/* WE USE md:flex instead of md:block because we want two buttons */}
                     <a href="#contact">
                         <Button size="sm">Contact Me</Button>
+                    </a>
+                    <a href="https://atlantic-jellyfish-c1f.notion.site/3rd-Year-Internship-PPO-Complete-Student-Action-Plan-3c0b5aac78f78142a542c2728b3573f0?pvs=143">
+                        <Button size="sm">Internship Road Map</Button>
                     </a>
                 </div>
                 {/* Mobile Menu Button */}

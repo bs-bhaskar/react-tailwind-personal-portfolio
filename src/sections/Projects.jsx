@@ -3,6 +3,15 @@ import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 import { FaGithub} from "react-icons/fa";
 const projects = [
   {
+    title: "Smart-LMS – AI-Powered Learning Management System",
+    description:
+      "A full-stack Learning Management System built with React + Vite and Node.js + Express + MongoDB, supporting three user roles: Students, Teachers, and Admins. It includes an AI-powered Study Bot, assessments, course management, communication tools, responsive dashboards, and a Parent QR-based Student Report.",
+    image: "/projects/5.png",
+    tags: ["React", "Tailwind", "Node.JS", "JWT", "MongoDB", "Axios", "Framer Motion", "Express.JS", "bcryptjs", "Multer", "Groq SDK"],
+    link: "https://smart-lms-three.vercel.app/",
+    github: "https://github.com/bs-bhaskar/smart-lms.git",
+  },
+  {
     title: "QuickGPT",
     description:
       "AI-powered MERN app where users can sign up and generate text and images using Gemini AI. Includes JWT authentication, ImageKit integration for image handling, and a Stripe-based credit system for purchasing usage. Built for real-world full-stack deployment.",
