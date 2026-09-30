@@ -1,6 +1,7 @@
 import { Menu , X} from "lucide-react";
 import { Button } from "../components/Button";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 const navLinks = [
     { href: "/#about", label: "About" },
     { href: "/#projects", label: "Projects" },
@@ -43,12 +44,10 @@ export const Navbar=()=>{
                     <a href="#contact">
                         <Button size="sm">Contact Me</Button>
                     </a>
-                    {/* <a href="https://atlantic-jellyfish-c1f.notion.site/3rd-Year-Internship-PPO-Complete-Student-Action-Plan-3c0b5aac78f78142a542c2728b3573f0?pvs=143">
-                        <Button size="sm">Internship Road Map</Button>
-                    </a> */}
-                    <a href="/career-hub">
+                    
+                    <Link to="/career-hub">
                         <Button size="sm">Career Hub</Button>
-                    </a>
+                    </Link>
                 </div>
                 {/* Mobile Menu Button */}
                 <button className="md:hidden p-2 text-[var(--color-foreground)] cursor-pointer" onClick={()=>setIsMobileMenuOpen((prev)=>!prev)}>
