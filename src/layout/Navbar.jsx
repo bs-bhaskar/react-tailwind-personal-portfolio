@@ -1,12 +1,13 @@
 import { Menu , X} from "lucide-react";
 import { Button } from "../components/Button";
 import { useEffect, useState } from "react";
-const navLinks=[
-    {href:"#about",label:"About"},
-    {href:"#projects",label:"Projects"},
-    {href:"#experience",label:"Journey"},
-    {href:"#testimonials",label:"Feedback"},
-    {href:"#contact",label:"Contact"},
+const navLinks = [
+    { href: "/#about", label: "About" },
+    { href: "/#projects", label: "Projects" },
+    { href: "/#experience", label: "Journey" },
+    { href: "/#testimonials", label: "Feedback" },
+    { href: "/career-hub", label: "Career Hub" },
+    { href: "/#contact", label: "Contact" },
 ];
 
 export const Navbar=()=>{
@@ -42,8 +43,11 @@ export const Navbar=()=>{
                     <a href="#contact">
                         <Button size="sm">Contact Me</Button>
                     </a>
-                    <a href="https://atlantic-jellyfish-c1f.notion.site/3rd-Year-Internship-PPO-Complete-Student-Action-Plan-3c0b5aac78f78142a542c2728b3573f0?pvs=143">
+                    {/* <a href="https://atlantic-jellyfish-c1f.notion.site/3rd-Year-Internship-PPO-Complete-Student-Action-Plan-3c0b5aac78f78142a542c2728b3573f0?pvs=143">
                         <Button size="sm">Internship Road Map</Button>
+                    </a> */}
+                    <a href="/career-hub">
+                        <Button size="sm">Career Hub</Button>
                     </a>
                 </div>
                 {/* Mobile Menu Button */}
@@ -60,7 +64,11 @@ export const Navbar=()=>{
                                 {link.label}
                             </a>
                         ))}
-                        <Button onClick={()=>setIsMobileMenuOpen(false)}>Contact Me</Button>
+                        <a href="/#contact" onClick={() => setIsMobileMenuOpen(false)}>
+                            <Button>       
+                                Contact Me
+                            </Button>
+                        </a>
                     </div>
                 </div>
             )}

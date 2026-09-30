@@ -9,11 +9,12 @@ const socialLinks = [
 ];
 
 const footerLinks = [
-  { href: "#about", label: "About" },
-  { href: "#projects", label: "Projects" },
-  { href: "#experience", label: "Journey" },
-  { href: "#contact", label: "Contact" },
-  { href: "#testimonials", label: "Feedback" },
+  { href: "/#about", label: "About" },
+  { href: "/#projects", label: "Projects" },
+  { href: "/#experience", label: "Journey" },
+  { href: "/#testimonials", label: "Feedback" },
+  { href: "/career-hub", label: "Career Hub" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export const Footer = () => {
