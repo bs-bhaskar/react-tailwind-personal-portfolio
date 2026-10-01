@@ -10,6 +10,7 @@ import { Hero } from "./sections/Hero";
 import { Projects } from "./sections/Projects";
 import { Testimonials } from "./sections/Testimonials";
 import { CareerHub } from "./sections/CareerHub";
+import { ProjectsPage } from "./sections/ProjectsPage";
 
 const Home = () => {
   return (
@@ -34,6 +35,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/career-hub" element={<CareerHub />} />
+        <Route path="/projects" element={<ProjectsPage />} />
       </Routes>
 
       <Footer />
