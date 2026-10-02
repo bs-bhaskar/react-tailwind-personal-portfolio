@@ -80,4 +80,84 @@ export const projects = [
     link: "https://text-to-voice-converter-tau.vercel.app/",
     github: "https://github.com/bs-bhaskar/text-to-voice-converter.git",
   },
+
+  {
+    title: "🎬 New Netflix Clone",
+    description:
+      "This project recreates the visual design of the Netflix landing page with a hero section, navigation bar, movie categories, movie cards, feature cards, email signup sections, FAQ section, and footer.",
+    image: "/projects/7.png",
+    tags: ["HTML", "CSS"],
+    link: "https://new-netflix-eight.vercel.app",
+    github: "https://github.com/bs-bhaskar/new-netflix.git",
+  },
+
+  {
+    title: "🎬 Netflix Clone",
+    description:
+      "This project recreates the visual design of the Netflix landing page, including the hero section, navigation bar, email signup section, entertainment sections, FAQ section, and footer.",
+    image: "/projects/8.png",
+    tags: ["HTML", "CSS"],
+    link: "https://netflix-clone-sooty-mu.vercel.app",
+    github: "https://github.com/bs-bhaskar/netflix-clone.git",
+  },
+
+  {
+    title: "₿ Crypto Currency Landing Page",
+    description:
+      "The website displays real-time prices of popular cryptocurrencies including Bitcoin, Ethereum, and Dogecoin with automatic updates.",
+    image: "/projects/12.png",
+    tags: ["HTML", "CSS", "JavaScript", "API"],
+    link: "https://cryptocurrency-website-gules.vercel.app",
+    github: "https://github.com/bs-bhaskar/cryptocurrency-website.git",
+  },
+
+  {
+    title: "🎨 Image Background Change Effect",
+    description:
+      "This project creates a cool image comparison effect where users can slide across the image to reveal the original and edited versions.",
+    image: "/projects/13.png",
+    tags: ["HTML", "CSS", "JavaScript"],
+    link: "https://image-background-change-effect-sand.vercel.app",
+    github: "https://github.com/bs-bhaskar/image-Background-change-effect.git",
+  },
+
+  {
+    title: "🍴 Delicious Food Place",
+    description:
+      "This project features a clean food-themed design with a navigation bar, social media links, shopping cart icon, login button, hero section, and an attractive 'Order Now' call-to-action.",
+    image: "/projects/9.jpeg",
+    tags: ["HTML", "CSS"],
+    link: "https://food-landing-pg.vercel.app",
+    github: "https://github.com/bs-bhaskar/food-landing-pg.git",
+  },
+
+  {
+    title: "📝 Notes App",
+    description:
+      "This application allows users to create, edit, save, and delete notes. All notes are stored in the browser using Local Storage, so they remain available even after refreshing or reopening the page.",
+    image: "/projects/10.png",
+    tags: ["HTML", "CSS", "JavaScript"],
+    link: "https://notes-app-pi-gules.vercel.app",
+    github: "https://github.com/bs-bhaskar/notes-app.git",
+  },
+
+  {
+    title: "🖱️ Drag and Drop List App",
+    description:
+      "This project allows users to drag items from one container and drop them into another, demonstrating the power of the HTML5 Drag and Drop API.",
+    image: "/projects/11.png",
+    tags: ["HTML", "CSS", "JavaScript"],
+    link: "https://drag-and-drop-eta-seven.vercel.app/",
+    github: "https://github.com/bs-bhaskar/drag-and-drop.git",
+  },
+
+  {
+    title: "🍽️ Zomato Clone",
+    description:
+      "This project recreates the visual design of the Zomato homepage, including the hero section, navigation bar, search functionality UI, food ordering cards, collections, popular locations, mobile app section, and footer.",
+    image: "/projects/6.png",
+    tags: ["HTML", "CSS"],
+    link: "https://zomato-clone-three-drab.vercel.app",
+    github: "https://github.com/bs-bhaskar/zomato-clone.git",
+  }, 
 ];
