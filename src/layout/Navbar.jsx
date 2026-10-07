@@ -41,7 +41,7 @@ export const Navbar=()=>{
                 </div>
                 {/* CTA button */}
                 <div className="hidden md:flex items-center gap-2">{/* WE USE md:flex instead of md:block because we want two buttons */}
-                    <a href="#contact">
+                    <a href="/#contact">
                         <Button size="sm">Contact Me</Button>
                     </a>
                     

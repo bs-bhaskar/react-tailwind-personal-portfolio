@@ -52,6 +52,14 @@ const documents = [
     external: false,
   },
   {
+    title: "Where to find real Internships",
+    description:
+      "70+ genuine portals, programs and hidden routes for tech and non-tech students",
+    type: "PDF",
+    link: "/resources/Where to Find Real Internships 2026-27.pdf",
+    external: false,
+  },
+  {
     title: "JAPAN INTERNSHIP GUIDE • 2027",
     description:
       "Two Japan internships worth applying for A practical CodeForSuccess guide for Indian engineering students, recent graduates and research-minded applicants.",
