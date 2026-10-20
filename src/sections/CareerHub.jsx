@@ -60,11 +60,35 @@ const documents = [
     external: false,
   },
   {
-    title: "JAPAN INTERNSHIP GUIDE • 2027",
+    title: "resume",
     description:
-      "Two Japan internships worth applying for A practical CodeForSuccess guide for Indian engineering students, recent graduates and research-minded applicants.",
+      "Latest version of my developer resume.",
     type: "PDF",
-    link: "/resources/CodeForSuccess_Japan_Internships_2027.pdf",
+    link: "/resume.pdf",
+    external: false,
+  },
+  {
+    title: "Professional CV",
+    description:
+      "Latest version of my developer resume.",
+    type: "PDF",
+    link: "/professional-cv.pdf",
+    external: false,
+  },
+  {
+    title: "Flow CV Resume",
+    description:
+      "Latest version of my developer resume.",
+    type: "PDF",
+    link: "/BHASKAR_YOGI_FlowCV_Resume.pdf",
+    external: false,
+  },
+  {
+    title: "Internshala Resume",
+    description:
+      "Latest version of my developer resume.",
+    type: "PDF",
+    link: "/BhaskarYogi_InternshalaResume.pdf",
     external: false,
   },
 ];

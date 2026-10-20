@@ -98,7 +98,7 @@ export const Hero = () => {
                   Contact Me <ArrowRight className="w-5 h-5" />
                 </Button>
               </a>
-              <a href="/resume.pdf" download target="_blank" rel="noopener noreferrer">
+              {/* <a href="/resume.pdf" download target="_blank" rel="noopener noreferrer">
                 <AnimatedBorderButton>
                   <Download className="w-5 h-5" />
                   Resume
@@ -109,14 +109,14 @@ export const Hero = () => {
                   <Download className="w-5q h-5"/>
                   Professional CV
                 </AnimatedBorderButton>
-              </a>
+              </a> */}
               <a href="/Bhaskar_Yogi_ATS_Resume.pdf" download target="_blank" rel="noopener noreferrer">
                 <AnimatedBorderButton>
                   <Download className="w-5q h-5"/>
-                  ATS Friendly CV
+                  My Resume
                 </AnimatedBorderButton>
               </a>
-              <a href="/BHASKAR_YOGI_FlowCV_Resume.pdf" download target="_blank" rel="noopener noreferrer">
+              {/* <a href="/BHASKAR_YOGI_FlowCV_Resume.pdf" download target="_blank" rel="noopener noreferrer">
                 <AnimatedBorderButton>
                   <Download className="w-5q h-5"/>
                   Flow CV
@@ -127,7 +127,7 @@ export const Hero = () => {
                   <Download className="w-5q h-5"/>
                   Internshala Resume
                 </AnimatedBorderButton>
-              </a>
+              </a> */}
             </div>
             {/* Social Links */}
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
