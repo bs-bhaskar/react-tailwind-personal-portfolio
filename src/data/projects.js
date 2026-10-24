@@ -62,12 +62,22 @@ export const projects = [
   },
 
   {
+    title: "KanchanFlow — Industrial Workflow Landing Page",
+    description:
+      "A modern, responsive marketing website for KanchanFlow, a manufacturing workflow concept featuring an industrial-modern design, dark graphite backgrounds, gold accents, clean layouts, and smooth animations.",
+    image: "/projects/14.png",
+    tags: ["Next.js", "React", "JavaScript", "CSS", "Tailwind CSS", "Framer Motion", "Node.js", "npm"],
+    link: "https://kanchanflow-five.vercel.app",
+    github: "https://github.com/bs-bhaskar/kanchanflow.git",
+  },
+
+  {
     title: "QR Code Generator",
     description:
       "A simple and responsive QR Code Generator built using HTML, CSS, and JavaScript. Users can instantly generate QR codes from any text or URL, download them, and even switch between light and dark mode.",
     image: "/projects/2.png",
     tags: ["HTML", "CSS", "JavaScript"],
-    link: "https://qr-code-generator-eta-flame.vercel.app/",
+    link: "https://qr-code-generator-eta-flame.vercel.app",
     github: "https://github.com/bs-bhaskar/qr-code-generator.git",
   },
 
