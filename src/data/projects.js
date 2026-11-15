@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "Smart-LMS – AI-Powered Learning Management System",
     description:
-      "A full-stack Learning Management System built with React + Vite and Node.js + Express + MongoDB, supporting three user roles: Students, Teachers, and Admins. It includes an AI-powered Study Bot, assessments, course management, communication tools, responsive dashboards, and a Parent QR-based Student Report.",
+      "A full-stack Learning Management System. supporting three user roles: Students, Teachers, and Admins. It includes an AI-powered Study Bot, assessments, course management, communication tools, responsive dashboards, and a Parent QR-based Student Report.",
     image: "/projects/5.png",
     tags: [
       "React",
@@ -74,7 +74,7 @@ export const projects = [
   {
     title: "QR Code Generator",
     description:
-      "A simple and responsive QR Code Generator built using HTML, CSS, and JavaScript. Users can instantly generate QR codes from any text or URL, download them, and even switch between light and dark mode.",
+      "A simple and responsive QR Code Generator. Users can instantly generate QR codes from any text or URL, download them, and even switch between light and dark mode.",
     image: "/projects/2.png",
     tags: ["HTML", "CSS", "JavaScript"],
     link: "https://qr-code-generator-eta-flame.vercel.app",
@@ -84,11 +84,21 @@ export const projects = [
   {
     title: "Text to Speech Converter",
     description:
-      "A clean and simple Text-to-Speech (TTS) web application built using HTML, CSS, and JavaScript. This project converts user input text into spoken audio using the browser's Web Speech API.",
+      "A clean and simple Text-to-Speech (TTS) web application. This project converts user input text into spoken audio using the browser's Web Speech API.",
     image: "/projects/3.png",
     tags: ["HTML", "CSS", "JavaScript"],
     link: "https://text-to-voice-converter-tau.vercel.app/",
     github: "https://github.com/bs-bhaskar/text-to-voice-converter.git",
+  },
+
+  {
+    title: "📸 Photo Gallery Celebrare",
+    description:
+      "A responsive and interactive Photo Gallery web application. Browse photos, search by photographer name, and save your favourite images.",
+    image: "/projects/15.png",
+    tags: ["React.js", "Vite", "Tailwind CSS v4"],
+    link: "https://photo-gallery-celebrare-pi.vercel.app",
+    github: "https://github.com/bs-bhaskar/Photo-Gallery-Celebrare.git",
   },
 
   {
