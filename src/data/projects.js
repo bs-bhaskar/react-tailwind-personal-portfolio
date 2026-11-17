@@ -62,6 +62,16 @@ export const projects = [
   },
 
   {
+    title: "📸 Photo Gallery Pro",
+    description:
+      "A modern, responsive Photo Gallery application. Browse beautiful photos, search photographers, save favourites, create collections, and explore images in a full-screen viewer.",
+    image: "/projects/16.png",
+    tags: ["React", "JavaScript", "Tailwind CSS", "Vite", "Picsum Photos API"],
+    link: "https://photo-gallery-pro-rho.vercel.app",
+    github: "https://github.com/bs-bhaskar/photo-gallery-pro.git",
+  },
+
+  {
     title: "KanchanFlow — Industrial Workflow Landing Page",
     description:
       "A modern, responsive marketing website for KanchanFlow, a manufacturing workflow concept featuring an industrial-modern design, dark graphite backgrounds, gold accents, clean layouts, and smooth animations.",
